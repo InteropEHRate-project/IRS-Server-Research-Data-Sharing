@@ -1,0 +1,269 @@
+{
+  "resourceType": "Bundle",
+  "id": "RDD-test",
+  "type": "collection",
+  "entry": [
+
+      {
+  "resourceType" : "ResearchStudy",
+  "id" : "example",
+  "meta" : {
+    "profile" : ["http://interopehrate.eu/fhir/StructureDefinition/ResearchStudy-ResearchStudy-IEHR"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">[Put rendering here]</div>"
+  },
+  "identifier" : [
+    {
+      "system" : "examplesystem",
+      "value" : "12"
+    }
+  ],
+  "title" : "Here is the title",
+  "status" : "active", 
+  "primaryPurposeType" : {
+    "coding" : [
+      {
+        "system" : "urn:oid:2.16.840.1.113883.4.642.3.827",
+        "code" : "treatment",
+        "display" : "Treatment"
+      }
+    ]
+  },
+  "condition" : {
+    "coding" : [
+      {
+        "system" : "urn:oid:2.16.840.1.113883.4.642.3.161",
+        "code" : "1155004",
+        "display" : "Myocardial hypertrophy, determined by electrocardiogram"
+      }
+    ]
+  },
+  "contact" : [
+  {
+    "name": "Mr Alberto Milano", 
+    
+    "telecom": [ 
+    {
+    "system" : "phone", 
+    "value" : "examplenumber"
+    }
+    ]
+    }
+  ], 
+  "location" : [ 
+  
+     {  "coding" : [
+      {
+        "system" : "2.16.840.1.113883.4.642.3.48",
+        "code" : "IT-78",
+        "display" : "Calabria"
+      }
+    ]
+    }, 
+    
+   {  "coding" : [
+      {
+       "system" : "2.16.840.1.113883.4.642.3.48",
+        "code" : "IT-65",
+        "display" : "Abruzzo"
+      }
+    ]
+    }
+    
+    ],
+  "description" : "A full description of how the study is being conducted.",
+  "enrollment" : [
+  {
+    "reference" : "Group/exampleGroupCohort1"
+  }
+  ],
+  "period" :   {
+  "start" : "2020-07-01T08:00:00+01:00", 
+  "end" : "2022-06-30T16:00:00+01:00"
+  },
+  "site" : [
+  {
+    "reference" : "Location/exampleLocation1"
+  },
+  {
+    "reference" : "Location/exampleLocation2"
+    }
+  ]
+  },
+
+  {
+  "resourceType" : "Group",
+  "id" : "exampleGroupCohort1",
+  "meta" : {
+    "profile" : ["http://interopehrate.eu/fhir/StructureDefinition/Group-Cohort-IEHR"]
+  },
+  "type" : "person",
+  "actual" : false,
+  "name" : "Cohort 1",
+  "quantity" : 1000,
+  "characteristic" : [
+    {
+      "code" : {
+     "coding" : [
+          {
+            "system" : "system_to_be_defined",
+            "code" : "code_to_be_defined",
+            "display" : "displayname_to_be_defined"
+          }
+        ],
+        "text" : "gender"
+      },
+      "valueCodeableConcept" : {
+        "text" : "female"
+      },
+      "exclude" : false
+    },
+    {
+      "code" : {
+     "coding" : [
+          {
+            "system" : "system_to_be_defined",
+            "code" : "code_to_be_defined",
+            "display" : "displayname_to_be_defined"
+          }
+        ],
+        "text" : "age"
+      },
+      "valueRange" : {
+        "low" : "65"
+      },
+      "exclude" : false
+    },
+  {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "system_to_be_defined",
+            "code" : "code_to_be_defined",
+            "display" : "displayname_to_be_defined"
+          }
+        ],
+        "text" : "diagnosis"
+      },
+      "valueCodeableConcept" : {
+     "coding" : [
+          {
+            "system" : "2.16.840.1.113883.6.2",
+            "code" : "I50",
+            "display" : "Heart failure"
+          }
+        ]
+      },
+      "exclude" : false,
+      "period" : {
+        "start" : "2020-05-02",
+        "end" : "2021-05-04"
+      }
+    }
+  ]
+},
+
+{
+  "resourceType" : "Group",
+  "id" : "exampleDataSetDescription",
+  "meta" : {
+    "profile" : ["http://interopehrate.eu/fhir/StructureDefinition/StructureDefinitionGroupDataSetDescription"]
+  },
+  "type" : "data",
+  "actual" : false,
+  "name" : "Data Set Description",
+  "characteristic" : [
+    {
+      "code" : {
+     "coding" : [
+          {
+            "system" : "system_to_be_defined",
+            "code" : "code_to_be_defined",
+            "display" : "displayname_to_be_defined"
+          }
+        ],
+        "text" : "Diagnosis"
+      },
+      "valueBoolean" : {
+        "text" : "true"
+      },
+      "exclude" : false
+    },
+  {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "system_to_be_defined",
+            "code" : "code_to_be_defined",
+            "display" : "displayname_to_be_defined"
+          }
+        ],
+        "text" : "laboratory result"
+      },
+      "valueCodeableConcept" : {
+     "coding" : [
+          {
+            "system" : "2.16.840.1.113883.6.1",
+            "code" : "19214-6",
+            "display" : "Oxygen [Partial pressure] saturation"
+          }
+        ]
+      },
+      "exclude" : false,
+      "period" : {
+        "start" : "2020-05-02",
+        "end" : "2020-05-04"
+      }
+    }
+  ]
+},
+
+{
+  "resourceType" : "Location",
+  "id" : "exampleLocation1",
+  "meta" : {
+    "profile" : ["http://interopehrate.org/fhir/StructureDefinition/Location-ReferenceResearchCenter-IEHR"]
+  },
+  "identifier" : [
+    {
+      "system" : "examplesystem",
+      "value" : "33"
+    }
+  ],
+  "name" : "Cardiovascular practice Milano",
+    "type" : {
+    "coding" : [
+      {
+        "system" : "urn:oid:2.16.840.1.113883.1.11.17660 ",
+        "code" : "CVDX",
+        "display" : "A practice setting where cardiovascular diagnostic procedures or therapeutic interventions are performed (e.g., cardiac catheterization lab, echocardiography suite)"
+      }
+    ]
+  },
+    "telecom":  
+    {
+    "system" : "phone", 
+    "value" : "examplenumber"
+    }, 
+  "address" : 
+  {
+  "type": "postal", 
+  "line": ["Viale Certosa, 27111111"], 
+  "city": "Milano", 
+  "postalcode": "20019", 
+  "country": "Italy"
+  },
+  "endpoint" : [
+  {
+    "reference" : "Endpoint/exampleEndpoint"
+  } 
+  ]
+  }
+
+
+
+
+    ]
+}

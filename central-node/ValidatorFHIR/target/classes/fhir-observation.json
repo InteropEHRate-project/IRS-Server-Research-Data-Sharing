@@ -1,0 +1,30 @@
+{
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4d37fab8-ae32-43c8-aa19-91534e507267",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/observation-laboratory-uv-ips"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "67151-1",
+              "display": "troponina T.cardiaca"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5b302664-99fc-4679-be2e-7ee6d1735c45"
+        },
+        "effectiveDateTime": "2017-11-17T08:45:00",
+        "valueQuantity": {
+          "value": 15.36,
+          "unit": "ng/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
