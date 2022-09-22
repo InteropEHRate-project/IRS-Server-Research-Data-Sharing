@@ -16,3 +16,5 @@ For PostgreSQL documentation refer to https://www.postgresql.org/docs/
 To run the Central Node web portal, you need to go in "RDS/central node/login-upload/" and run the following command:
 
 #node index.js
+
+The file "RDS/central node/login-upload/config.js" contains the host and port values for the Central Node web portal. they can be changed if not suitable in the deploy machine. 
