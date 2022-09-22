@@ -7,7 +7,7 @@ The Central Node web portal, and the Research Centre (RC) application.
 
 ## Central Node
 
-The Central Node web portal component, stored in "RDS/central node/login-upload/", is developed in NodeJS, due to that a NodeJS environment has to be available in the deploy machine.
+The Central Node web portal component, stored in "RDS/central node/login-upload/", is developed in NodeJS, due to that a NodeJS environment has to be available in the deployment machine.
 
 It requires a previous set up of a postgresql database, which needs to be initialized with the sql file "RDS/central-node/psql-db/central-node.sql". It is possible to set up the database connection by editing the file "RDS/central node/login-upload/config.js".
 
@@ -17,7 +17,7 @@ To run the Central Node web portal, you need to go in "RDS/central node/login-up
 
 #node index.js
 
-The file "RDS/central node/login-upload/config.js" contains the host and port values for the Central Node web portal. they can be changed if not suitable in the deploy machine. 
+The file "RDS/central node/login-upload/config.js" contains the host and port values for the Central Node web portal. they can be changed if not suitable in the deployment machine. 
 
 ## Research Centre
 
@@ -29,6 +29,6 @@ In order to run the application, you need to go in "RDS/RC/", where the docker-c
 
 #docker-compose up
 
-Be sure that the image name specified for the "research" container, in the docker-compose.yml file, is the same as the docker image you uploaded in the deploy machine.
+Be sure that the image name specified for the "research" container, in the docker-compose.yml file, is the same as the docker image you uploaded in the deployment machine.
 
 
