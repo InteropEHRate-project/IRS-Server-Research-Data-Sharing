@@ -32,3 +32,7 @@ In order to run the application, you need to go in "RDS/RC/", where the docker-c
 Be sure that the image name specified for the "research" container, in the docker-compose.yml file, is the same as the docker image you uploaded in the deployment machine.
 
 
+
+To receive more support for download and installation of this components, contact simone.bocca@unitn.it, gabor.bella@unitn.it
+
+
